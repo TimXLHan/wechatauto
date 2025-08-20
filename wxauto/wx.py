@@ -232,6 +232,16 @@ class WeChat(Chat, Listener):
         """
         return self.core.sessionbox.get_session()
 
+    def PrintAllSession(self) -> List['SessionElement']:
+        #todo fixthis
+        return []
+        # sessions = self.GetSession()
+        # if not sessions:
+        #     print("no sessions!")
+        # else:
+        #     for session in sessions:
+        #         print(f"{session.name},{session.time}, {session.content}")
+
     def ChatWith(
         self, 
         who: str, 
